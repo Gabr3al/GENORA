@@ -1,0 +1,30 @@
+{
+    "name": "control_lamp",
+    "description": "Turn the lamp on or off and optionally adjust its brightness (dim).",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "state": {
+          "type": "string",
+          "description": "The desired state of the lamp. Use 'on' to turn the lamp on and 'off' to turn it off.",
+          "enum": ["on", "off"]
+        },
+        "dim": {
+          "type": "integer",
+          "description": "Optional brightness level of the lamp. Provide a value between 0 (lowest brightness) and 254 (highest brightness). If not set, the brightness remains unchanged.",
+          "minimum": 0,
+          "maximum": 100
+        }
+      },
+      "required": ["state"]
+    },
+    "response": {
+      "type": "object",
+      "properties": {
+        "success": {
+          "type": "boolean",
+          "description": "Indicates whether the operation was successful."
+        }
+      }
+    }
+}

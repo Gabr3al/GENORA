@@ -1,0 +1,28 @@
+{
+    "name": "play_playlist",
+    "description": "Searches for a playlist by name and starts playing it. Returns true if the playlist was successfully found and played, false otherwise.",
+    "parameters": {
+        "type": "object",
+        "properties": {
+            "playlist_name": {
+                "type": "string",
+                "description": "The name of the playlist to search and play."
+            }
+        },
+        "required": ["playlist_name"]
+    },
+    "returns": {
+        "type": "object",
+        "properties": {
+            "success": {
+                "type": "boolean",
+                "description": "True if the playlist was found and successfully started playing, false otherwise."
+            },
+            "message": {
+                "type": "string",
+                "description": "Additional information, such as an error message or the playlist that is now playing."
+            }
+        },
+        "required": ["success", "message"]
+    }
+}

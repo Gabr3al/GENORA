@@ -1,0 +1,19 @@
+{
+    "name": "go_to_start_music",
+    "description": "Rewinds the current track to the start. Returns true if the operation is successful, false otherwise.",
+    "parameters": {
+        "type": "object",
+        "properties": {},
+        "required": []
+    },
+    "returns": {
+        "type": "object",
+        "properties": {
+            "success": {
+                "type": "boolean",
+                "description": "True if the track was successfully rewound to the start, false otherwise."
+            }
+        },
+        "required": ["success"]
+    }
+}

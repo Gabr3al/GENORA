@@ -1,0 +1,26 @@
+{
+    "name": "set_volume",
+    "description": "Sets the volume level of the current playback. The volume should be a number between 0 and 100. Returns true if the operation is successful, false otherwise.",
+    "parameters": {
+        "type": "object",
+        "properties": {
+            "volume": {
+                "type": "integer",
+                "description": "The volume level to set (between 0 and 100).",
+                "minimum": 0,
+                "maximum": 100
+            }
+        },
+        "required": ["volume"]
+    },
+    "returns": {
+        "type": "object",
+        "properties": {
+            "success": {
+                "type": "boolean",
+                "description": "True if the volume was successfully set, false otherwise."
+            }
+        },
+        "required": ["success"]
+    }
+}

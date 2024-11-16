@@ -1,0 +1,19 @@
+{
+    "name": "pause_music",
+    "description": "Pauses the currently playing music. Returns true if the operation is successful, false otherwise.",
+    "parameters": {
+        "type": "object",
+        "properties": {},
+        "required": []
+    },
+    "returns": {
+        "type": "object",
+        "properties": {
+            "success": {
+                "type": "boolean",
+                "description": "True if the music was successfully paused, false otherwise."
+            }
+        },
+        "required": ["success"]
+    }
+}

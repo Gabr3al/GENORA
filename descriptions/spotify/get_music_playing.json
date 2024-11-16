@@ -1,0 +1,23 @@
+{
+    "name": "get_music_playing",
+    "description": "This function retrieves the current song and artist the user is listening to on Spotify or other platforms.",
+    "parameters": {
+        "type": "object",
+        "properties": {},
+        "required": []
+    },
+    "returns": {
+        "type": "object",
+        "properties": {
+            "track": {
+                "type": "string",
+                "description": "The current song's title, e.g., 'Shape of You'."
+            },
+            "artist": {
+                "type": "string",
+                "description": "The artist of the current song, e.g., 'Ed Sheeran'."
+            }
+        },
+        "required": ["track", "artist"]
+    }
+}

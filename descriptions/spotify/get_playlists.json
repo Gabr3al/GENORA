@@ -1,0 +1,35 @@
+{
+    "name": "get_playlists",
+    "description": "Retrieves all playlists associated with the user. Returns a list of playlist names and their respective IDs. NEVER read out the IDs to the user.",
+    "parameters": {
+        "type": "object",
+        "properties": {}
+    },
+    "returns": {
+        "type": "object",
+        "properties": {
+            "playlists": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "name": {
+                            "type": "string",
+                            "description": "The name of the playlist."
+                        },
+                        "id": {
+                            "type": "string",
+                            "description": "The unique ID of the playlist."
+                        }
+                    },
+                    "required": ["name", "id"]
+                }
+            },
+            "success": {
+                "type": "boolean",
+                "description": "True if the playlists were successfully retrieved, false otherwise."
+            }
+        },
+        "required": ["playlists", "success"]
+    }
+}

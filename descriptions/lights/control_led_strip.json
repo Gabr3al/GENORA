@@ -1,0 +1,31 @@
+{
+    "name": "control_led_strip",
+    "description": "Turn the LED strip on or off and optionally set the color in RGB or using a predefined color name.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "state": {
+          "type": "string",
+          "description": "The desired state of the LED strip. Use 'on' to turn the LED strip on and 'off' to turn it off.",
+          "enum": ["on", "off"]
+        },
+        "color": {
+          "type": "string",
+          "description": "Optional color to set the LED strip. Can be a color name or an RGB integer between 0 and 16777215.",
+          "enum": ["red", "green", "blue", "white", "yellow", "cyan", "magenta"],
+          "default": "blue"
+        }
+      },
+      "required": ["state"]
+    },
+    "response": {
+      "type": "object",
+      "properties": {
+        "success": {
+          "type": "boolean",
+          "description": "Indicates whether the operation was successful."
+        }
+      }
+    }
+  }
+  

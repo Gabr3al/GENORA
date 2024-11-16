@@ -1,0 +1,25 @@
+{
+    "name": "previous_music",
+    "description": "Goes to the previous song. You can specify how many tracks to skip back, with the default being 1. Returns true if the operation is successful, false otherwise.",
+    "parameters": {
+        "type": "object",
+        "properties": {
+            "skip_count": {
+                "type": "integer",
+                "description": "The number of previous tracks to skip. Default is 1.",
+                "default": 1
+            }
+        },
+        "required": []
+    },
+    "returns": {
+        "type": "object",
+        "properties": {
+            "success": {
+                "type": "boolean",
+                "description": "True if the previous song(s) were successfully skipped to, false otherwise."
+            }
+        },
+        "required": ["success"]
+    }
+}

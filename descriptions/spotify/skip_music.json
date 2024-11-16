@@ -1,0 +1,25 @@
+{
+    "name": "skip_music",
+    "description": "Skips the current music. You can specify how many tracks to skip forward, with the default being 1. Returns true if the operation is successful, false otherwise.",
+    "parameters": {
+        "type": "object",
+        "properties": {
+            "skip_count": {
+                "type": "integer",
+                "description": "The number of tracks to skip forward. Default is 1.",
+                "default": 1
+            }
+        },
+        "required": []
+    },
+    "returns": {
+        "type": "object",
+        "properties": {
+            "success": {
+                "type": "boolean",
+                "description": "True if the music was successfully skipped, false otherwise."
+            }
+        },
+        "required": ["success"]
+    }
+}

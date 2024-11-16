@@ -1,0 +1,45 @@
+{
+    "name": "get_weather",
+    "description": "Retrieve the current weather for a specified city. If no city is provided, [YOUR_CITY] is used as the default. ANSWER ONLY WITH TEMPERATURE AND CONDITION EXCEPT IF ASKED FOR MORE. DONT MENTION FEELS LIKE UNTIL IT IS A NOTICABLE DIFFERENCE.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "city": {
+          "type": "string",
+          "description": "The name of the city to get the weather for. Defaults to [YOUR_CITY] if not provided."
+        }
+      },
+      "required": []
+    },
+    "response": {
+      "type": "object",
+      "properties": {
+        "description": {
+          "type": "string",
+          "description": "the current weather condition"
+        },
+        "temperature": {
+          "type": "number",
+          "description": "the current temperature in degrees Celsius"
+        },
+        "humidity": {
+          "type": "number",
+          "description": "the current humidity in percent"
+        },
+        "city": {
+          "type": "string",
+          "description": "the city the weather data is for"
+        },
+        "country": {
+          "type": "string",
+          "description": "the country the city is in"
+        },
+        "feels_like": {
+          "type": "number",
+          "description": "the current temperature it feels like in degrees Celsius"
+        }
+      },
+      "required": ["description", "temperature", "humidity", "city", "country", "feels_like"]
+    }
+  }
+  

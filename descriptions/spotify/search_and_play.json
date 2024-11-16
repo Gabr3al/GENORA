@@ -1,0 +1,28 @@
+{
+    "name": "search_and_play",
+    "description": "Searches for a song based on the provided query and plays the first result. Returns 'success' as true if the operation is successful, and false otherwise. Additionally, returns the currently playing song's info if successful.",
+    "parameters": {
+        "type": "object",
+        "properties": {
+            "query": {
+                "type": "string",
+                "description": "The search query for the song to be played. E.g., 'Shape of You by Ed Sheeran'."
+            }
+        },
+        "required": ["query"]
+    },
+    "returns": {
+        "type": "object",
+        "properties": {
+            "success": {
+                "type": "boolean",
+                "description": "True if the search and play operation was successful, false otherwise."
+            },
+            "playing": {
+                "type": "string",
+                "description": "The currently playing song's info (if successful), or an error message if the operation failed."
+            }
+        },
+        "required": ["success"]
+    }
+}

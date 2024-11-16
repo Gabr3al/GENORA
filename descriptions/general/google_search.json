@@ -1,0 +1,40 @@
+{
+    "name": "google_search",
+    "description": "Performs a Google search using the provided query and retrieves a list of search results. Uses advanced search capabilities. The results include the title, URL, and a brief description for each result. Do NOT provide URLS in your Response unless strictly asked to.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string",
+          "description": "The search query string used to find relevant results on Google."
+        },
+        "num_results": {
+          "type": "integer",
+          "description": "Optional parameter to specify the number of results to return. Defaults to 3.",
+          "default": 3
+        }
+      },
+      "required": ["query"]
+    },
+    "response": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string",
+            "description": "The title of the search result."
+          },
+          "description": {
+            "type": "string",
+            "description": "A brief description or snippet of the search result."
+          },
+          "url": {
+            "type": "string",
+            "description": "The URL of the search result."
+          }
+        }
+      },
+      "description": "An array of search results, each containing a title, description, and URL. Returns an empty list if an error occurs."
+    }
+  }

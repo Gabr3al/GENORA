@@ -1,0 +1,19 @@
+{
+    "name": "resume_music",
+    "description": "Plays/Resumes the current music. Returns true if the operation is successful, false otherwise.",
+    "parameters": {
+        "type": "object",
+        "properties": {},
+        "required": []
+    },
+    "returns": {
+        "type": "object",
+        "properties": {
+            "success": {
+                "type": "boolean",
+                "description": "True if the music was successfully resumed/played, false otherwise."
+            }
+        },
+        "required": ["success"]
+    }
+}
