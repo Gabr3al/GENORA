@@ -1,3 +1,4 @@
+Love this project? Show your support by ⭐️ the repo and help make it even better!
 # G.E.N.O.R.A (Generative Executing Neural Operative Runtime Assistant)
 
 G.E.N.O.R.A is a general-purpose conversational AI designed to assist with various tasks such as controlling smart devices, interacting with Spotify, retrieving weather information, and performing Google searches. It leverages OpenAI's function calls to understand and respond to user inputs, and it integrates with various APIs to execute specific functions. The AI can be extended with endless possibilities!
