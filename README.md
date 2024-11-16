@@ -18,7 +18,7 @@ G.E.N.O.R.A can be used as a digital assistant to automate and simplify everyday
 
 ### Prerequisites
 
-- Python 3.7+
+- Python 3.11+
 - pip (Python package installer)
 
 ### Step 1: Clone the Repository
